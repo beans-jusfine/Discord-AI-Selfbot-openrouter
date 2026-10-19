@@ -1,12 +1,12 @@
 bot:
   # Owner ID of your account (can't be same as bot's ID)
-  owner_id: 123456789012345678
+  owner_id: 1157101597000749086
   
   # Prefix you want bot commands to be triggered with
-  prefix: "~"
+  prefix: "!"
   
   # The word(s) you want the AI to respond to (e.g: trigger="John" or trigger="John,Jon,Jonathon")
-  trigger: "WORD_YOU_WANT_TO_TRIGGER_BOT_WITH"
+  trigger: "bot, ai, vro, vroo, gng"
 
   # Model of the AI you'd like to use from Groq (https://console.groq.com/docs/models) (Default: llama3-70b-8192)
   groq_model: "llama-3.3-70b-versatile"
@@ -24,13 +24,13 @@ bot:
   realistic_typing: false
 
   # Whether to wait and collect multiple messages before responding (less API usage + more realistic than replying to every message)
-  batch_messages: true 
+  batch_messages: true
   
   # How long to wait for additional messages (in seconds)
-  batch_wait_time: 10.0
+  batch_wait_time: 2.0
 
   # Whether the bot should keep replying to people, even if there's no trigger in their message
-  hold_conversation: true
+  hold_conversation: false
   
   # Anti Age Ban Measures - The bot will attempt to avoid being banned by Discord by filtering out numbers below 13
   # This is a strict method, as it removes ANY number below 13, including dates, times, etc.
